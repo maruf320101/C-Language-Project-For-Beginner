@@ -1,0 +1,25 @@
+Dino Game in C
+
+The Dino game is a simple hurdle-based game. In this game a dinosaur has to jump hurdles, if the dinosaur successfully jumps a hurdle, the score point is incremented by one. And if the dinosaur hits the hurdle then the Game is Over.
+
+Approach for Game
+
+The dinosaur is represented by ASCII art and moves up and down to simulate jumping.
+Obstacles move from right to left, and the dinosaur must jump over them.
+The game speed increases over time, making it challenging.
+If the dinosaur hits an obstacle, the game displays a "Game Over" message and waits for a key press.
+
+Libraries Used
+
+<stdio.h>: Standard Input/Output functions like printf.
+<conio.h>: Console Input/Output functions, mainly used for getch() and kbhit().
+<time.h>: Provides functions to work with time, used for the delay function.
+<windows.h>: Provides functions for interacting with Windows OS, used for console manipulation.
+
+Functions
+
+moveTo(int x, int y): Moves the console cursor to the specified coordinates (x, y).
+pause(unsigned int milliseconds) It introduces a delay in the program execution. The delay is implemented using the clock() function.
+displayGameInfo(): It sets up the initial game screen by clearing the console, displays the controls, and initializes the display of the score.
+displayCharacter(int jumpType): It displays the dinosaur at a specific height, simulating a jump.
+displayObstacle(): It draws and moves the obstacles on the screen. If the dinosaur collides with any obstacle, the game over message is shown and the game is finished at this point.
